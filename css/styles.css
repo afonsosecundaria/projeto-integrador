@@ -1,3 +1,36 @@
+/* === AJUSTE PARA O VÍDEO === */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* limite opcional em telas grandes */
+  margin: 1.5rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Garante que o vídeo não saia da tela em dispositivos móveis */
+@media (max-width: 600px) {
+  .video-container {
+    max-width: 100%;
+    margin: 1rem 0;
+    border-radius: 0;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 * {
       margin: 0;
       padding: 0;
